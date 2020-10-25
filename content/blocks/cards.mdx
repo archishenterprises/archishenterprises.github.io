@@ -1,0 +1,74 @@
+export const Team = ({ ...props }) => (
+  <Section py="8|12|16|24" {...props}>
+    <Container>
+      <Flexbox flexDirection="column" textAlign="center">
+        <H2 m="0">Our Products</H2>
+        <P fontSize="xl|2xl" mt="2" textAlign="center">
+          Grow your business with the help of our products
+        </P>
+      </Flexbox>
+      <Grid col="1|3" gap="4|6|8" mt="4|6|8">
+        <Member
+          picture="corrugated_box.png"
+          name="Corrugated Box"
+          position="3 Ply | 5 Ply | 7 Ply"
+          bio="All kinds of custom, brown &amp; white boxes"
+        />
+        <Member
+          picture="corrugated_roll.png"
+          name="Corrugated Roll"
+          position="2 Ply"
+          bio="Easily adapts to all shapes with different measurement &amp; sizes"
+        />
+        <Member
+          picture="bopp_tape.png"
+          name="BOPP Tape"
+          position="Foam | Transparent | Tissue | Packaging"
+          bio="Strong grip with excellent durability. Custom sizes &amp; color tapes"
+        />
+        <Member
+          picture="stretch_film.png"
+          name="Stretch Film"
+          position="Wrap | Cling Film"
+          bio="Wide range of sizes from 3 inch to 2 feet rolls to suit manual application on various product types"
+        />
+        <Member
+          picture="air_bubble.png"
+          name="Air Bubble"
+          position="Wrap | Roll Transparent"
+          bio="Great for e-commerce shipments &amp; confidential products. Sizes ranging from 35 GSM to 120 GSM"
+        />
+        <Member
+          picture="strapping_roll.jpg"
+          name="Strapping Rolls"
+          position="1 inch | 2 inch"
+          bio="Made from high grade virgin polymer"
+        />
+      </Grid>
+    </Container>
+  </Section>
+)
+
+export const Member = ({
+  picture,
+  name,
+  position,
+  bio,
+  socialLinks,
+  ...props
+}) => (
+  <Div boxShadow="md" rounded="lg" overflow="hidden" {...props}>
+    <Image src={picture} w="full" h="48|56|64" />
+    <Div p="6">
+      <P m="0" fontSize="xl" fontWeight="semibold">
+        {name}
+      </P>
+      <P m="0" fontSize="md">
+        {position}
+      </P>
+      <P mt="4" fontSize="md">
+        {bio}
+      </P>
+    </Div>
+  </Div>
+)

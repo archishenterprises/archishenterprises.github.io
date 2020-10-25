@@ -1,0 +1,82 @@
+<Section py="8|12|16|24">
+  <Container>
+    <Grid col="1|2" gap="8|12|16" alignItems="center">
+      <Div>
+        <H2 mt="2" mb="0">
+          Contact Us
+        </H2>
+        <P fontSize="xl|2xl" mt="2">
+          Reach and grow your business. We are here to help you.
+        </P>
+        <A href="#" fontSize="md" color="primary" lineHeight="none">
+          <Icon name="map" size="5" mr="2" color="primary" />
+          Sonawale, Bhiwandi, India
+        </A>
+        <Br />
+        <A href="tel:+91 9324647300" fontSize="md" color="primary" lineHeight="none">
+          <Icon name="phone" size="5" mr="2" color="primary" />
+          +91 9324647300
+        </A>
+        <Br />
+        <A href="tel:+91 7709900983" fontSize="md" color="primary" lineHeight="none">
+          <Icon name="smartphone" size="5" mr="2" color="primary" />
+          +91 7709900983
+        </A>
+        <Br />
+        <A href="mailto:archishenterprises@gmail.com" fontSize="md" color="primary" lineHeight="none">
+          <Icon name="mail" size="5" mr="2" color="primary" />
+          archishenterprises@gmail.com
+        </A>
+      </Div>
+      <Form d="grid" col="1|repeat(2, auto)" gap="4" mt="4" w="full|auto">
+        <Div>
+          <VisuallyHidden>
+            <Label htmlFor="form-01-name">Name</Label>
+          </VisuallyHidden>
+          <Input type="text" id="form-01-name" name="name" placeholder="Name" />
+        </Div>
+        <Div>
+          <VisuallyHidden>
+            <Label htmlFor="form-01-email">Email</Label>
+          </VisuallyHidden>
+          <Input
+            type="email"
+            id="form-01-email"
+            name="email"
+            placeholder="Email"
+          />
+        </Div>
+        <Div colStart="span 2">
+          <VisuallyHidden>
+            <Label htmlFor="form-01-phone">Phone</Label>
+          </VisuallyHidden>
+          <Input
+            type="tel"
+            id="form-01-phone"
+            name="phone"
+            placeholder="Phone"
+          />
+        </Div>
+        <Div>
+          <VisuallyHidden>
+            <Label htmlFor="form-01-subject">Subject</Label>
+          </VisuallyHidden>
+        </Div>
+        <Div colStart="span 2">
+          <VisuallyHidden>
+            <Label htmlFor="form-01-message">Message</Label>
+          </VisuallyHidden>
+          <Textarea
+            placeholder="Message"
+            id="form-01-message"
+            name="message"
+            rows="5"
+          />
+        </Div>
+        <Button type="submit" variant="primary" colStart="span 2" hoverBg="secondary">
+          Send message
+        </Button>
+      </Form>
+    </Grid>
+  </Container>
+</Section>

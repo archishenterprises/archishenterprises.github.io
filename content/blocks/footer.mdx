@@ -1,0 +1,53 @@
+import { useSiteMetadata } from "@reflexjs/gatsby-theme-core"
+
+export const FooterBlock = () => {
+  const { title } = useSiteMetadata()
+  return (
+    <Section py={[8, 10, 12]}>
+      <Container>
+        <Flexbox
+          flexDirection={["column", "row"]}
+          alignItems={["flex-start", "center"]}
+          justifyContent="space-between"
+        >
+         <Div maxW="300px">
+            <H2 m="0" fontSize="xl|2xl|3xl" color="primary">
+              {title}
+            </H2>
+            <A href="mailto:archishenterprises@gmail.com" fontSize="md" color="primary" lineHeight="none">
+              <Icon name="mail" size="5" mr="2" color="primary" />
+              archishenterprises@gmail.com
+            </A>
+          </Div>
+          <NavMenu
+            name="footer-example"
+            dropdown={false}
+            expand={false}
+            my="6|0"
+            gap="4|8"
+          />
+          <Grid col="2" gap="4" mt={[4, 0]}>
+            <A href="tel: +91 9324647300" color="primary">
+              <Icon name="phone" size={5} />
+              <VisuallyHidden>Call us</VisuallyHidden>
+            </A>
+            <A href="mailto:archishenterprises@gmail.com" color="primary">
+              <Icon name="mail" size={5} />
+              <VisuallyHidden>Mail Us</VisuallyHidden>
+            </A>
+          </Grid>
+        </Flexbox>
+        <Div
+          borderTopWidth={1}
+          textAlign="center"
+          pt={[4, 5, 6]}
+          mt={[4, 5, 6]}
+        >
+          <P fontSize="sm" mt="0">
+            © {new Date().getFullYear()} {title}
+          </P>
+        </Div>
+      </Container>
+    </Section>
+  )
+}
