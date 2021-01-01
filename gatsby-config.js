@@ -7,5 +7,5 @@ module.exports = {
     siteUrl: process.env.SITE_URL || "http://localhost:8000",
     siteKeywords: "archish enterprises, corrugated box, stretch film, strapping roll, air bubble, bopp tape, corrugated roll, best in supplier"
   },
-  plugins: ["@reflexjs/gatsby-theme-base"],
+  plugins: ["@reflexjs/gatsby-theme-base", "gatsby-plugin-sitemap"],
 }
